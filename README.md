@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# 🚍 SchoolBus 2.0 – Vehicle Movement on a Map
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A frontend React.js application that simulates a vehicle (bus) moving along a predefined route on a map.  
+The app uses **Leaflet.js** and **dummy location data** to animate the bus in real-time while providing useful statistics.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎯 Objective
+To create an interactive map-based simulation of a bus moving along a route using dummy JSON data,  
+with smooth animation and intuitive controls.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🗺 Map Integration
+- Interactive map powered by **Leaflet.js**
+- Displays bus route with polyline
+- Bus stops shown with custom icons
+- Auto-follow option to keep the bus centered
 
-### `npm test`
+### 🚍 Vehicle Simulation
+- Smooth animated movement of the bus  
+- Controls: **Play / Pause / Restart / Reset**  
+- Real-time updates for bus position and speed  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📊 Live Stats
+- Elapsed Time  
+- Current Speed  
+- Total Distance Travelled  
+- Current Coordinates  
 
-### `npm run build`
+### 📱 Responsive UI
+- Works on both desktop and mobile  
+- Clean card-style display for statistics  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Example Dummy Data
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app uses a local `dummy-route.json` file stored inside the **public** folder.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```json
+[
+  { "latitude": 18.520430, "longitude": 73.856743, "timestamp": "2024-07-20T10:00:00Z", "stop": true },
+  { "latitude": 18.520900, "longitude": 73.858200, "timestamp": "2024-07-20T10:00:10Z" },
+  { "latitude": 18.521700, "longitude": 73.859600, "timestamp": "2024-07-20T10:00:20Z", "stop": true },
+  { "latitude": 18.523300, "longitude": 73.862400, "timestamp": "2024-07-20T10:00:40Z" }
+]
