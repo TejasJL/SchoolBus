@@ -47,3 +47,54 @@ The app uses a local `dummy-route.json` file stored inside the **public** folder
   { "latitude": 18.521700, "longitude": 73.859600, "timestamp": "2024-07-20T10:00:20Z", "stop": true },
   { "latitude": 18.523300, "longitude": 73.862400, "timestamp": "2024-07-20T10:00:40Z" }
 ]
+  ```
+---
+
+ ## ⚡ Technology Stack
+
+React.js (Functional Components + Hooks)
+
+Leaflet.js (Map & Animation)
+
+JavaScript (ES6+)
+
+Custom Icons (bus.png, stop.png)
+
+---
+
+## 🎮 Controls
+
+| Button            | Action                              |
+| ----------------- | ----------------------------------- |
+| ▶ **Play**        | Starts bus animation                |
+| ⏸ **Pause**       | Pauses animation                    |
+| ⏯ **Restart**     | Resumes animation from paused point |
+| 🔄 **Reset**      | Resets bus to starting position     |
+| ☑ **Auto-Follow** | Keeps bus centered on the map       |
+
+
+---
+
+## 📊 Stats Displayed
+
+Elapsed Time – Time since start of journey
+
+Speed – Real-time speed in km/h
+
+Total Distance – Distance covered in km
+
+Coordinates – Current latitude and longitude
+
+---
+
+## 🌐 Live Demo
+
+🔗 SchoolBus 2.0 Live app – https://school-bus-beta.vercel.app/
+
+---
+
+## 👨‍💻 Author
+
+Tejas Lahurikar
+
+Frontend Developer – Assignment Submission
